@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+.header {
+  background-image: url(../scss/img/bgimage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+
+
+  &__list {
+   padding: 40px 0;
+  }
+
+  &__logo {
+   width: 65px;
+   height: 65px;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  &__drop {
+    margin-left: 32px;
+  }
+
+  &__drop:hover &__list-part {
+    display: block;
+  }
+
+
+  &__line{
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+  }
+
+  &__item {
+    margin-left: 32px;
+    
+  }
+  
+  &__link {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__list {
+
+  }
+}
+
+.drop {
+  &__list {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  &__item {
+    margin-left: 32px;
+  }
+
+  &__link {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__list-part {
+    position: absolute;
+    top: 70%;
+    list-style: none;
+    background-color: #000;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  &__item:hover &__list-part {
+    display: block;
+  }
+
+  &__menu-btn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    border: none;
+    background: none;
+    display: none;
+  }
+
+  &__menu {
+    margin-left: -50px;
+    width: 43px;
+    height: 25px;
+  }
+
+}
+  
+ul {
+  padding: 0;
+}
+
+@media screen and (max-width:831px) {
+  .header__list {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.8;
+    z-index: 50;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .header__link {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .header__item {
+    margin-bottom: 20px;
+  }
+  
+  .drop__menu-btn {
+    display: block;
+    right: 100px;
+  }
+
+  .drop__item {
+    margin-left: 50px;
+    display: none;
+  }
+
+  .header__line {
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .header__list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.8;
+    z-index: 50;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    display: none;
+  }
+}

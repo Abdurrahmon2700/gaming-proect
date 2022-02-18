@@ -1,0 +1,19 @@
+@mixin list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin position-content ($top, $left, $color) {
+  content: '';
+  position: absolute;
+  top: $top;
+  left: $eft;
+  color: $color;
+}
