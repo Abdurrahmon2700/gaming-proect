@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 .header {
-  background-image: url(../img/Optimized-bgimage.png);
+  background-image: url('..//img/herobkg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,10 +55,8 @@
     font-weight: normal;
   }
 
-  &__list {
-
-  }
 }
+
 
 .drop {
   &__list {
@@ -125,12 +123,14 @@ ul {
     left: 50%;
     top: 0;
     width: 50%;
-    height: 100vh;
+    height: 120vh;
     background: #000;
     opacity: 0.8;
     z-index: 50;
     flex-direction: column;
     justify-content: space-around;
+    display: none;
+    position: fixed;
   }
 
   .header__link {

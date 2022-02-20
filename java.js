@@ -1,6 +1,12 @@
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+const open = document.getElementById('open');
+const modal = document.getElementById('modal');
+const close = document.getElementById('close');
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
+open.addEventListener('click', () => {
+  console.log('one');
+  modal.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+  modal.classList.remove('show');
+});
